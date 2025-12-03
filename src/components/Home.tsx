@@ -1,6 +1,6 @@
-import Hero from "./Hero.jsx";
-import DreamTeam from "./DreamTeam.jsx";
-import OpeningCrawl from "./OpeningCrawl.jsx";
+import Hero from "./Hero.tsx";
+import DreamTeam from "./DreamTeam.tsx";
+import OpeningCrawl from "./OpeningCrawl.tsx";
 
 const Home = () => {
     return (

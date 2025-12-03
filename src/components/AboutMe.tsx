@@ -1,4 +1,4 @@
-import {base_url, period_month} from "../utils/constants.js";
+import {base_url, period_month} from "../utils/constants.ts";
 import {useEffect, useState} from "react";
 
 const AboutMe = () => {

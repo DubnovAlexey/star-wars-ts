@@ -1,10 +1,10 @@
-import Home from "./Home.jsx";
-import AboutMe from "./AboutMe.jsx";
-import Contact from "./Contact.jsx";
-import StarWars from "./StarWars.jsx";
-import {navItems} from "../utils/constants.js";
+import Home from "./Home.tsx";
+import AboutMe from "./AboutMe.tsx";
+import Contact from "./Contact.tsx";
+import StarWars from "./StarWars.tsx";
+import {navItems} from "../utils/constants.ts";
 import {useContext} from "react";
-import {SWContext} from "../utils/context.js";
+import {SWContext} from "../utils/context.ts";
 
 const Main = () => {
     const {page} = useContext(SWContext);

@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {base_url, period_month} from "../utils/constants.js";
+import {base_url, period_month} from "../utils/constants.ts";
 
 const Contact = () => {
     const [planets, setPlanets] = useState(() => {

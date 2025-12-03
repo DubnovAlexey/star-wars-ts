@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {base_url} from "../utils/constants.js";
+import {base_url} from "../utils/constants.ts";
 import Text from "./ui/Text.jsx";
 
 const OpeningCrawl = () => {

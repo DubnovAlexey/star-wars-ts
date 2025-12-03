@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {SWContext} from "../utils/context.js";
+import {SWContext} from "../utils/context.ts";
 import Button from "./ui/Button.jsx";
 
 const NavItem = ({itemTitle}) => {
