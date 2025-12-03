@@ -1,4 +1,11 @@
-const Button = ({children, callback, className}) => {
+interface Props {
+  callback?: () => void;
+  children: string;
+  className?: string;
+
+}
+
+const Button = ({children, callback, className}: Props) => {
   return (
     <div
       onClick={callback ?? (() => {})}

@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {base_url} from "../utils/constants.ts";
-import Text from "./ui/Text.jsx";
+import Text from "./ui/Text.tsx";
 
 const OpeningCrawl = () => {
     const [openingCrawl, setOpeningCrawl] = useState(() => sessionStorage.getItem('opening_crawl'));

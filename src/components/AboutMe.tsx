@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 
 const AboutMe = () => {
     const [hero, setHero] = useState(() => {
-        const hero = JSON.parse(localStorage.getItem("hero"));
+        const hero = JSON.parse(localStorage.getItem("hero")!);
         if (hero && ((Date.now() - hero.timestamp) < period_month)) {
             return hero.payload;
         }

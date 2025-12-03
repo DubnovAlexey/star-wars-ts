@@ -1,4 +1,10 @@
-const Friend = ({friend, pos}) => {
+interface Props {
+    friend: string;
+    pos: number;
+    
+}
+
+const Friend = ({friend, pos}: Props) => {
     let styles = "w-full ";
     if (pos === 7) {
         styles += 'rounded-bl-3xl';

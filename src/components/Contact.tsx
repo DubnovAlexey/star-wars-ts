@@ -2,8 +2,8 @@ import {useEffect, useState} from "react";
 import {base_url, period_month} from "../utils/constants.ts";
 
 const Contact = () => {
-    const [planets, setPlanets] = useState(() => {
-        const planets = JSON.parse(localStorage.getItem('planets'));
+    const [planets, setPlanets] = useState<string[]>(() => {
+        const planets = JSON.parse(localStorage.getItem('planets')!);
         if (planets && ((Date.now() - planets.time) < period_month)) {
             return planets.payload;
         } else {
@@ -14,7 +14,7 @@ const Contact = () => {
     useEffect(() => {
         const getPlanets = async () => {
             const res = await fetch(`${base_url}/v1/planets`);
-            const data = await res.json();
+            const data: {name: string}[] = await res.json();
             const planets = data.map(item => item.name);
             setPlanets(planets);
             localStorage.setItem('planets', JSON.stringify({
